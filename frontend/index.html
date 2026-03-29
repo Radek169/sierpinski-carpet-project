@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dywan Sierpińskiego</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Dywan Sierpińskiego</h1>
+    </header>
+
+    <div class="controls">
+      <label>
+        Iteracje: <span id="iterationValue">3</span>
+      </label>
+      <input type="range" id="iterationRange" min="0" max="6" value="3">
+
+      <label>
+        Prędkość (ms): <span id="speedValue">700</span>
+      </label>
+      <input type="range" id="speedRange" min="100" max="1500" step="100" value="700">
+
+      <div class="buttons">
+        <button id="drawBtn">Generuj</button>
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <p>Aktualna iteracja: <span id="currentStep">0</span></p>
+    </div>
+
+    <canvas id="carpetCanvas" width="600" height="600"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
